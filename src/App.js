@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Editor from "./components/Editor";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
   // states to store the user-entered codes in the editors, and the srcDoc for the iframe
-  const [html, setHtml] = useState("");
-  const [css, setCss] = useState("");
-  const [js, setJs] = useState("");
+  // we are using our custom hook useLocalStorage here which will call useState internally
+  const [html, setHtml] = useLocalStorage("html", "");
+  const [css, setCss] = useLocalStorage("css", "");
+  const [js, setJs] = useLocalStorage("js", "");
   const [srcDoc, setSrcDoc] = useState("");
 
   /* Any time our code changes, we want to update our srcDoc after a small delay (say 1 sec)
