@@ -1,0 +1,30 @@
+.editor {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: hsl(210, 13%, 75%);
+}
+
+.editor__titleBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(210, 13%, 40%);
+  color: white;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+/* overwrite the default static height of codemirror editors */
+.CodeMirror {
+  height: 100% !important;
+}
+
+.editor__codeMirror {
+  flex-grow: 1;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  overflow: hidden;
+}

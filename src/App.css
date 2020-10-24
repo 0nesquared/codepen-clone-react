@@ -1,0 +1,8 @@
+.panel {
+  display: flex;
+  height: 50vh;
+}
+
+.top-panel {
+  background-color: hsl(210, 13%, 75%);
+}
