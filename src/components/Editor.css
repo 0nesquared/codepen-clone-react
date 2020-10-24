@@ -14,6 +14,7 @@
 /* to make the editors collapse the code inside them as well */
 .editor.collapsed .CodeMirror-scroll {
   position: absolute;
+  overflow: hidden !important;
 }
 
 .editor__titleBar {
@@ -24,6 +25,14 @@
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+}
+
+.editor__button {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
 /* overwrite the default static height of codemirror editors */
