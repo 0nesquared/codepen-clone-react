@@ -1,7 +1,7 @@
 # codepen-clone-react
 Simplistic clone of codepen.com editor using ReactJS.
 
-Find **deployed version** [here](https://codepen-clone-462f6.web.app/) and alternative link - [here](https://codepen-clone-462f6.firebaseapp.com/), using Firebase deployment.
+Find **deployed version** [here](https://codepen-clone-462f6.web.app/) and alternative link - [here](https://codepen-clone-462f6.firebaseapp.com/), using Firebase Hosting.
 
 ## Components Breakdown
 
@@ -18,7 +18,7 @@ This is used to define the main page of the app and contains -
 ### Editor Component - `props={language, displayName, value, onChange}`
 
 This component uses the open source _CodeMirror_ editor to provide the language editing features according to the passed in props. 
-___
+
 ## App Logic
 
 The **App** component stores the state of our html, css and js code in three separate variables, using the **useState** hook and also storing the information in the browser's local storage => all through our custom **useLocalStorage** hook, so that whenever the user reloads the page, the same code is available to him again.
